@@ -19,10 +19,13 @@ while True:
         print("Please try again with year 1 ~ 4")
         exit()
 
-    print("Name: {}, Year: {}, ".format(name, year), end = "")
+    print("-------------------------------------------") #partition
+    print("           ABC COLLEGE INVOICE             ")
+    print("Name: {} n\nYear: {} ".format(name, year), end = "") #display name,year of study
     if year == '2' or year =='3':
-        print("Code: {}".format(code), end= ", ")
-    print("Fee: RM {}".format(format(fee, '.2f')))
+        print("\nCode: {}".format(code), end= " ") #display code in year 2 or 3
+    print("\nFee : RM {}".format(format(fee, '.2f')))#compute and display fee
+    print("-------------------------------------------") #partition
 
     x = input("Is there another input? (y/n) ")
     x = x.lower()
